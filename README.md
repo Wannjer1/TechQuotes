@@ -1,6 +1,6 @@
 # QuoteApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1. It is a quote generating app that seeks to allow users to post a quote, upvote and downvote on a quote and delete a quote.
 
 ## Development server
 
