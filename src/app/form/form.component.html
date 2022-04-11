@@ -1,9 +1,9 @@
 <div class="container mr-4">
   <h2 class="text-center">Add a Quote</h2>
   <br />
-  <form action="" (ngsubmit)="submitQuote()" #form="ngForm">
+  <form action="" (ngsubmit)="submitQuote()" #quoteForm="ngForm">
     <div class="mb-3">
-      <label for="quote" class="form-group">Add a quote</label>
+      <label for="Quote" class="form-group">Add a quote</label>
       <textarea
         class="form-control"
         id="nquote"
@@ -14,11 +14,14 @@
       ></textarea>
     </div>
     <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Author</label>
+      <label for="Author" class="form-label">Author</label>
       <input
         type="text"
         class="form-control"
-        id="exampleFormControlInput1"
+        id="authorname"
+        name="Author"
+        [ngModel]="newQuote.author"
+        #author="ngModel"
         placeholder="author"
       />
     </div>

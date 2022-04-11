@@ -4,8 +4,7 @@
     <app-form (addQuote)="addNewQuote($event)"></app-form>
   </div>
   <div>
-    <!-- <ul> -->
-    <div *ngFor="let quote of quotes; let i = index">
+    <div class="p-2" *ngFor="let quote of quotes; let i = index">
       Quote: {{ quote.quote }}
       <br />
       Author: {{ quote.author }}
@@ -13,16 +12,16 @@
       Sender: {{ quote.sender }}
       <br />
       Votes: {{ votesliked }}
-      <button class="btn btn-success mr-5" (click)="functionlike()">
-        like
-      </button>
+      <button class="btn btn-success m-1" (click)="functionlike()">like</button>
       votes:{{ votesdisliked }}
 
-      <button class="btn btn-primary mr-5" (click)="functiondisliked()">
+      <button class="btn btn-primary m-1" (click)="functiondisliked()">
         dislike
       </button>
-      <button class="btn btn-danger" (click)="functiondelete(i)">delete</button>
+
+      <button class="btn btn-danger m-1" (click)="functiondelete(i)">
+        delete
+      </button>
     </div>
-    <!-- </ul> -->
   </div>
 </div>
