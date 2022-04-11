@@ -40,16 +40,24 @@ export class QuoteComponent implements OnInit {
     this.quotes.push(quote);
   }
 
-  votesliked: number = 0;
-  votesdisliked: number = 0;
-
-  functionlike() {
-    this.votesliked++;
+  addLikes(index: number) {
+    this.quotes[index].showLikes++;
   }
 
-  functiondisliked() {
-    this.votesdisliked++;
+  addDislikes(index: number) {
+    this.quotes[index].showDislikes++;
   }
+
+  // votesliked: number = 0;
+  // votesdisliked: number = 0;
+
+  // functionlike() {
+  //   this.votesliked++;
+  // }
+
+  // functiondisliked() {
+  //   this.votesdisliked++;
+  // }
 
   functiondelete(i: any) {
     this.quotes.splice(i, 1);
