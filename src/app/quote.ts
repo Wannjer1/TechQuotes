@@ -1,6 +1,6 @@
 export class Quote {
   quote: string;
-  sender: string;
   author: string;
+  sender: string;
   votes: number;
 }
