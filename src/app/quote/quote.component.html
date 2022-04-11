@@ -12,10 +12,12 @@
       <br />
       Sender: {{ quote.sender }}
       <br />
-      <!-- Votes: {{ quote.votes }} -->
+      Votes: {{ votesliked }}
       <button class="btn btn-success mr-5" (click)="functionlike()">
         like
       </button>
+      votes:{{ votesdisliked }}
+
       <button class="btn btn-primary mr-5" (click)="functiondisliked()">
         dislike
       </button>
