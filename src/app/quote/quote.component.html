@@ -1,28 +1,26 @@
 <h1 class="text-center">quoteApp</h1>
 <div class="container bg-dark text-light d-flex p-4">
   <div>
-    <app-form></app-form>
+    <app-form (addQuote)="addNewQuote($event)"></app-form>
   </div>
   <div>
-    <ul>
-      <li *ngFor="let quote of quotes; let i = index">
-        Quote: {{ quote.quote }}
-        <br />
-        Author: {{ quote.author }}
-        <br />
-        Sender: {{ quote.sender }}
-        <br />
-        Votes: {{ quote.votes }}
-        <button class="btn btn-success mr-5" (click)="functionlike()">
-          like
-        </button>
-        <button class="btn btn-primary mr-5" (click)="functiondisliked()">
-          dislike
-        </button>
-        <button class="btn btn-danger" (click)="functiondelete(i)">
-          delete
-        </button>
-      </li>
-    </ul>
+    <!-- <ul> -->
+    <div *ngFor="let quote of quotes; let i = index">
+      Quote: {{ quote.quote }}
+      <br />
+      Author: {{ quote.author }}
+      <br />
+      Sender: {{ quote.sender }}
+      <br />
+      <!-- Votes: {{ quote.votes }} -->
+      <button class="btn btn-success mr-5" (click)="functionlike()">
+        like
+      </button>
+      <button class="btn btn-primary mr-5" (click)="functiondisliked()">
+        dislike
+      </button>
+      <button class="btn btn-danger" (click)="functiondelete(i)">delete</button>
+    </div>
+    <!-- </ul> -->
   </div>
 </div>
