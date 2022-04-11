@@ -1,38 +1,38 @@
 <div class="container mr-4">
   <h2 class="text-center">Add a Quote</h2>
   <br />
-  <form action="" (ngsubmit)="submitQuote()" #quoteForm="ngForm">
+  <form (ngSubmit)="submitQuote()" #quoteForm="ngForm">
     <div class="mb-3">
-      <label for="Quote" class="form-group">Add a quote</label>
+      <label for="quoteDescription" class="form-group">Add a quote</label>
       <textarea
         class="form-control"
-        id="nquote"
+        id="quoteDescription"
         rows="3"
-        name="quote"
-        [ngModel]="newQuote.quote"
-        #quote="ngModel"
+        name="quoteDescription"
+        [(ngModel)]="newQuote.quoteDescription"
+        #quoteDescription="ngModel"
       ></textarea>
     </div>
     <div class="mb-3">
-      <label for="author" class="form-label">Author</label>
+      <label for="author" class="form-group">Author</label>
       <input
         type="text"
         class="form-control"
         id="author"
         name="author"
-        [ngModel]="newQuote.author"
+        [(ngModel)]="newQuote.author"
         #author="ngModel"
         placeholder="author"
       />
     </div>
     <div class="mb-3">
-      <label for="sender" class="form-label">Sender</label>
+      <label for="sender" class="form-group">Sender</label>
       <input
         type="text"
         class="form-control"
         id="sender"
         name="sender"
-        [ngModel]="newQuote.sender"
+        [(ngModel)]="newQuote.sender"
         #sender="ngModel"
         placeholder="sender"
       />

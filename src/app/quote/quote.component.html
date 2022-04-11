@@ -4,12 +4,12 @@
     <app-form (addQuote)="addNewQuote($event)"></app-form>
   </div>
   <div>
-    <div class="p-2" *ngFor="let quote of quotes; let i = index">
-      {{ quote.quote }}
+    <div class="p-2 text-light" *ngFor="let quote of quotes; let i = index">
+      <span style="color: orange">Quote</span>:{{ quote.quoteDescription }}
       <br />
-      {{ quote.author }}
+      <span style="color: orange">Author</span>: {{ quote.author }}
       <br />
-      {{ quote.sender }}
+      <span style="color: orange">Sender</span>: {{ quote.sender }}
       <br />
       votes: {{ votesliked }}
       <button class="btn btn-success m-1" (click)="functionlike()">like</button>
