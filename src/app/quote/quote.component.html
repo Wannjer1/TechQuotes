@@ -1,8 +1,8 @@
-<div>
+<div class="container bg-dark text-light">
   <h1>quoteApp</h1>
   <div>
     <ul>
-      <li *ngFor="let quote of quotes">
+      <li *ngFor="let quote of quotes; let i = index">
         Quote: {{ quote.quote }}
         <br />
         Author: {{ quote.author }}
@@ -10,8 +10,15 @@
         Sender: {{ quote.sender }}
         <br />
         Votes: {{ quote.votes }}
-        <button>like</button>
-        <button>dislike</button>
+        <button class="btn btn-success mr-5" (click)="functionlike()">
+          like
+        </button>
+        <button class="btn btn-primary mr-5" (click)="functiondisliked()">
+          dislike
+        </button>
+        <button class="btn btn-danger" (click)="functiondelete(i)">
+          delete
+        </button>
       </li>
     </ul>
   </div>

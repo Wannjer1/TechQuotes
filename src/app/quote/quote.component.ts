@@ -51,6 +51,11 @@ export class QuoteComponent implements OnInit {
   functiondisliked() {
     this.votesdisliked++;
   }
+
+  functiondelete(i: any) {
+    this.quotes.splice(i);
+  }
+
   constructor() {}
 
   ngOnInit(): void {}
