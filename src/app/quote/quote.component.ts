@@ -41,6 +41,16 @@ export class QuoteComponent implements OnInit {
       votes: 0,
     },
   ];
+
+  votesliked: number = 0;
+  votesdisliked: number = 0;
+  functionlike() {
+    this.votesliked++;
+  }
+
+  functiondisliked() {
+    this.votesdisliked++;
+  }
   constructor() {}
 
   ngOnInit(): void {}
