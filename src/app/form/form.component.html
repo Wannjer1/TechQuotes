@@ -14,23 +14,26 @@
       ></textarea>
     </div>
     <div class="mb-3">
-      <label for="Author" class="form-label">Author</label>
+      <label for="author" class="form-label">Author</label>
       <input
         type="text"
         class="form-control"
-        id="authorname"
-        name="Author"
+        id="author"
+        name="author"
         [ngModel]="newQuote.author"
         #author="ngModel"
         placeholder="author"
       />
     </div>
     <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Sender</label>
+      <label for="sender" class="form-label">Sender</label>
       <input
         type="text"
         class="form-control"
-        id="exampleFormControlInput1"
+        id="sender"
+        name="sender"
+        [ngModel]="newQuote.sender"
+        #sender="ngModel"
         placeholder="sender"
       />
     </div>

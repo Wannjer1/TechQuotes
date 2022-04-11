@@ -34,7 +34,7 @@ export class QuoteComponent implements OnInit {
       'Vivian Chemu'
     ),
   ];
-  addNewQuote(quote: any) {
+  addNewQuote(quote: Quote) {
     let quoteLength = this.quotes.length;
     quote.count = quoteLength + 1;
     this.quotes.push(quote);

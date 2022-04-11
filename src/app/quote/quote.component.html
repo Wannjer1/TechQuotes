@@ -5,16 +5,16 @@
   </div>
   <div>
     <div class="p-2" *ngFor="let quote of quotes; let i = index">
-      Quote: {{ quote.quote }}
+      {{ quote.quote }}
       <br />
-      Author: {{ quote.author }}
+      {{ quote.author }}
       <br />
-      Sender: {{ quote.sender }}
+      {{ quote.sender }}
       <br />
-      Votes: {{ votesliked }}
+      votes: {{ votesliked }}
       <button class="btn btn-success m-1" (click)="functionlike()">like</button>
-      votes:{{ votesdisliked }}
 
+      votes:{{ votesdisliked }}
       <button class="btn btn-primary m-1" (click)="functiondisliked()">
         dislike
       </button>
