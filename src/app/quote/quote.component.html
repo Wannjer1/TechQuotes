@@ -1,5 +1,8 @@
-<div class="container bg-dark text-light">
-  <h1>quoteApp</h1>
+<h1 class="text-center">quoteApp</h1>
+<div class="container bg-dark text-light d-flex p-4">
+  <div>
+    <app-form></app-form>
+  </div>
   <div>
     <ul>
       <li *ngFor="let quote of quotes; let i = index">
