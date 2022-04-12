@@ -11,17 +11,17 @@
       <br />
       <span style="color: orange">Sender</span>: {{ quote.sender }}
       <br />
-      <span style="color: orange">Sender</span>:
+      <span style="color: orange">Published</span>:
       {{ quote.datePublished | date }}
       <br />
 
       <button class="btn btn-success m-1" (click)="addLikes(i)">
-        like{{ quote.showLikes }}
+        like {{ quote.showLikes }}
       </button>
 
       <!-- Dislikes -->
       <button class="btn btn-primary m-1" (click)="addDislikes(i)">
-        dislike{{ quote.showDislikes }}
+        dislike {{ quote.showDislikes }}
       </button>
 
       <button class="btn btn-danger m-1" (click)="functiondelete(i)">
