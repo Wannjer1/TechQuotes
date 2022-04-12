@@ -7,7 +7,8 @@ export class Quote {
     public count: number,
     public quoteDescription: string,
     public author: string,
-    public sender: string // public votes: number
+    public sender: string, // public votes: number
+    public datePublished: Date
   ) {
     this.showDetails = false;
     this.showLikes = 0;

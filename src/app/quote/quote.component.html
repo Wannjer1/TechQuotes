@@ -11,6 +11,9 @@
       <br />
       <span style="color: orange">Sender</span>: {{ quote.sender }}
       <br />
+      <span style="color: orange">Sender</span>:
+      {{ quote.datePublished | date }}
+      <br />
 
       <button class="btn btn-success m-1" (click)="addLikes(i)">
         like{{ quote.showLikes }}
