@@ -11,12 +11,12 @@
       <br />
       <span style="color: orange">Sender</span>: {{ quote.sender }}
       <br />
-      {{ addLikes }}
+
       <button class="btn btn-success m-1" (click)="addLikes(i)">
         like{{ quote.showLikes }}
       </button>
 
-      {{ addDislikes }}
+      <!-- Dislikes -->
       <button class="btn btn-primary m-1" (click)="addDislikes(i)">
         dislike{{ quote.showDislikes }}
       </button>
